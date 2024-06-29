@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AlbumsListComponent } from './albums-list/albums-list.component';
+import { AlbumDetailComponent } from './album-detail/album-detail.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'albums', 
     component:AlbumsListComponent
+  },
+  {
+    path: 'albums/details/:id', 
+    component:AlbumDetailComponent
   }
 ]
 
